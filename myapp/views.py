@@ -26,6 +26,11 @@ def HTMLTemplate(articleTag):
         {articleTag}
         <ul>
             <li><a href="/create/">create</a></li>
+            <li>
+                <form>
+                    <input type="submit" value="delete">
+                </form>
+            </li>
         </ul>
     </body>
     </html>
