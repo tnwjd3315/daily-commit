@@ -32,3 +32,11 @@ active_users={}
 for user, status in users.items():
   if status == 'active':
     active_users[user] = status
+
+# range function
+for i in range(5):
+  print(i)
+
+list(range(5,10))
+list(range(0,10,3))
+list(range(-10,-100,-30))
