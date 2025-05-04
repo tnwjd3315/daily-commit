@@ -63,7 +63,9 @@ def read(id):
 def create():
     if request.method == 'GET': 
         content = '''
-            <form action="/create/" method="POST">
+            # form: pass the address of the action to the form
+            # POST, instead of GET: to hide url
+            <form action="/create/" method="POST"> 
                 <p><input type="text" name="title" placeholder="title"></p>
                 <p><textarea name="body" placeholder="body"></textarea></p>
                 <p><input type="submit" value="create"></p>
